@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DXM - Atelier</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #000, #333);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+    }
+    
+    .logo img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+    
+    .contact-form {
+      margin-bottom: 40px;
+    }
+    
+    .form-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+    }
+    
+    .form-input:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    
+    .form-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/Users/antoinebeilvert/Downloads/dxm-apple-premium-reseller.png" alt="Logo DXM">
+    </div>
+  
+    <h1>DXM</h1>
+  
+    <div class="contact-form">
+      <h2 class="form-title">Inscription</h2>
+      <form action="traitement.php" method="post">
+        <input type="text" class="form-input" name="nom" placeholder="Nom">
+        <input type="email" class="form-input" name="email" placeholder="Email">
+        <input type="tel" class="form-input" name="telephone" placeholder="Numéro de téléphone">
+        <textarea class="form-input" name="message" placeholder="Message"></textarea>
+        <button class="form-button" type="submit">Envoyer</button>
+      </form>
+    </div>
+  
+    <h2>Coordonnées</h2>
+    <p><strong>Adresse :</strong> 3 allées des tanneurs, Nantes, France</p>
+    <p><strong>Téléphone :</strong> 02 28 03 17 90</p>
+    <p><strong>Email :</strong> nantes@dxm.fr</p>
+  </div>
